@@ -14,7 +14,7 @@ void kernel_clear_screen() {
 }
 
 unsigned int kernel_printf(char* message, unsigned int line) {
-	char* video_ptr = (char* ) 0xb800;
+	char* video_ptr = (char* ) 0xB8000;
 	unsigned int i = 0;
 	
 	i = (line * 80 * 2);
